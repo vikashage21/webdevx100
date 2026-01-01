@@ -1,0 +1,52 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+#formcontrol {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+#formcontrol__input {
+  padding: 0.5rem 6rem;
+  border-radius: 0.4rem;
+  text-align: center;
+}
+
+.btn {
+  padding: 0.3rem 2rem;
+  border-radius: 0.2rem;
+  border: none;
+  margin: 0.2rem;
+}
+.btn--primary {
+  background-color: #00ffff;
+}
+.btn--warning {
+  background-color: red;
+}
+.btn--disable {
+  background-color: rgba(0, 0, 0, 0.4862745098);
+}
+
+.todobox {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 0.5rem;
+  margin: 1.5rem auto;
+  width: 50%;
+  border: 1px solid #000;
+}/*# sourceMappingURL=style.css.map */
