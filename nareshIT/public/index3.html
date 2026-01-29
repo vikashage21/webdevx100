@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping - website </title>
+    <style>
+        /* reset the padding and marigin */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        /* header and ul list style */
+        header,footer,
+        ul {
+            display: flex;
+            margin-bottom: 0.2rem;
+            padding: 0.2rem;
+            gap: 0.2rem;
+            background-color: #000;
+            
+            li {
+                list-style: none;
+                
+            }
+            
+            a {
+                text-decoration: none;
+                color: #fff;
+                cursor: pointer;
+            }
+
+        }
+
+        /* styling ifrmae */
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 450px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- headers -->
+
+    <header>
+
+        <nav>
+            <ul>
+                <a href="">
+                    <li>home</li>
+                </a>
+                <a href="./pages/electronic.html" target="frameborder">
+                    <li>electronic</li>
+                </a> <a href="pages/footwear.html" target="frameborder">
+                    <li>footwear</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <main>
+
+            <iframe src="index2.html" frameborder="0" name="frameborder"></iframe>
+
+
+        </main>
+
+
+    </section>
+
+
+    <footer>
+        <div>
+
+            &copy; copyright
+        </div>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>

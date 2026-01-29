@@ -6,6 +6,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    background-color:#ccc;
 }
 
   *::before , *::after{
@@ -24,7 +25,8 @@
 .para{
     color: $paraColor;
     padding: 0.5rem;
-    font-size:1.6rem
+    font-size:1.6rem;
+    margin:2.5rem;
 }
 
 .btn {
@@ -40,8 +42,6 @@
 }
 
 }
-
-
  .navbar {
     display: flex;
     justify-content: space-between;
@@ -54,16 +54,19 @@
     &__listContainer {
         display: flex;
         gap: 0.8rem;
-
+         list-style: none;
 
       
     }
 
+    a{
+        text-decoration: none;
+    }
       &__list{
-            list-style: none;
-           
+            
             color: $linkColor;
             font-size: 1.2rem;
+            margin:0.8rem;
         }
  }
 
@@ -78,4 +81,60 @@
     &__image{
         width: 70%;
     }
+}
+
+// ===============================
+// Media Queries (SCSS)
+// ===============================
+
+@media (max-width: 679px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    ul {
+      display: none;
+      margin: 0.9rem;
+      flex-direction: column;
+    }
+  }
+
+  .para {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 489px) {
+  .heading {
+    margin: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .para {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 443px) {
+  .container {
+    &__image {
+      width: 90vw;
+    }
+  }
+
+  .heading {
+    margin: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .para {
+    margin: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
 }
