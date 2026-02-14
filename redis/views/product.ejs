@@ -1,0 +1,28 @@
+<div style="border: 1px solid ; border-radius: 2rem; padding: 1.5rem; margin: 0 auto;">
+
+    <% if (typeof product !=='undefined' ) { %>
+
+        <h>
+
+            NOT FOUND PRODUCT
+
+        </h>
+        <% } %>
+
+            <div>
+
+                <img src="<%=data.image%>" width="400" height="400" alt="product_image">
+                <h2>
+                    <%= data.title%>
+                </h2>
+                <p>
+                    <%= data.price%>
+                </p>
+                <p>
+
+                    <%= data.description%>
+                </p>
+
+            </div>
+
+</div>
