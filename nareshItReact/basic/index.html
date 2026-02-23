@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>components</title>
+    <script>
+        const login = (title) => {
+            document.write(
+                `
+            <div>
+            <h3>${title} form</h3>
+            <input type="text" placeholder="enter your email"></input>
+            <input type="submit" value="login"/></input>
+            <div>
+    
+    `
+            )
+        }
+        function bodyLoad() {
+
+            login('admin')
+            // if we want to multiple component we can call it again
+            login('login')
+        }
+    </script>
+</head>
+
+<body onload="bodyLoad()">
+
+</body>
+
+</html>
