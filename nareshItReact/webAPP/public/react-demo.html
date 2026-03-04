@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            padding: 1.5rem;
+            gap: 1.5rem;
+            border: 1px solid;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .brand-name {
+            font-weight: bold;
+        }
+
+        span {
+            margin: 0.5rem;
+        }
+    </style>
+
+    <script src="../node_modules/react/umd/react.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="../node_modules/@babel/standalone/babel.js"></script>
+    <script type="text/babel">
+        function Navbar() {
+            return (
+                <nav>
+                    <div className="brand-name">
+                        shopper
+                    </div>
+                    <div>
+                        <span>home</span>
+                        <span>shop</span>
+                        <span>pages</span>
+                        <span>blogs</span>
+                    </div>
+                    <div className="input-group">
+                        <input placeholder="search here" />
+                        <button> search</button>
+                    </div>
+
+                </nav>
+            )
+        }
+
+        ReactDOM.render(
+            <header>
+                <Navbar />
+            </header>, document.getElementById('root'))
+    </script>
+</head>
+
+<body>
+    <noscript>please enable javascript in your browser</noscript>
+    <div id="root">
+    </div>
+
+</body>
+
+</html>
