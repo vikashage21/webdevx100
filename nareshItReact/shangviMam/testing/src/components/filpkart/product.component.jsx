@@ -13,7 +13,6 @@ export function ProductComponent() {
       const data = await res.json();
       setProduct(data);
     }
-
     fetchData();
   }, []);
 
