@@ -13,7 +13,7 @@ function DemoComponent() {
     });
   };
 
-  const handelMouseOut = (e) => {
+  const handelMouseOut = () => {
     setStyleObj({
       color: "black",
     });
