@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Rahul Sharma",
+    "phone": "9876543210",
+    "email": "rahul@gmail.com"
+  },
+  {
+    "id": 2,
+    "name": "Amit Verma",
+    "phone" : "9123456780",
+    "email": "amit@gmail.com"
+  },
+  {
+    "id": 3,
+    "name": "Priya Singh",
+    "phone": "9988776655",
+    "email": "priya@gmail.com"
+  },
+  {
+    "id": 4,
+    "name": "Neha Gupta",
+    "phone": "9090909090",
+    "email": "neha@gmail.com"
+  }
+]
